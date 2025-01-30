@@ -27,6 +27,7 @@ use core::ptr;
 use crate::rcc::{rec, CoreClocks, ResetEnable};
 use crate::stm32;
 
+pub use smoltcp;
 use smoltcp::{
     phy::{self, DeviceCapabilities},
     time::Instant,
