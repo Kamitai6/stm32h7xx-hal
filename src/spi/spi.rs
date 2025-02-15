@@ -522,7 +522,7 @@ pub enum Event {
 
 #[derive(Debug)]
 pub struct Spi<SPI, ED, WORD = u8> {
-    spi: SPI,
+    pub spi: SPI,
     hardware_cs_mode: HardwareCSMode,
     _word: PhantomData<WORD>,
     _ed: PhantomData<ED>,
